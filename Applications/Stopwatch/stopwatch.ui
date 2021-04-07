@@ -16,14 +16,23 @@
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>200</x>
      <y>40</y>
      <width>221</width>
      <height>201</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">QGroupBox{
+background-color: rgb(85, 85, 127);
+color: white;
+font: bold;
+}
+
+</string>
+   </property>
    <property name="title">
-    <string>Stopwatch</string>
+    <string>                              Stopwatch</string>
    </property>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
@@ -47,6 +56,14 @@
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QPushButton" name="start">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: grey;
+	radius: 20;
+	color: blue;
+font: bold;
+}</string>
+       </property>
        <property name="text">
         <string>start</string>
        </property>
@@ -54,6 +71,13 @@
      </item>
      <item>
       <widget class="QPushButton" name="stop">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: grey;
+	color: blue;
+	font: bold;
+}</string>
+       </property>
        <property name="text">
         <string>stop</string>
        </property>
@@ -61,6 +85,14 @@
      </item>
      <item>
       <widget class="QPushButton" name="reset">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: grey;
+	color: blue;
+	font: bold;
+	radius: 20;
+}</string>
+       </property>
        <property name="text">
         <string>reset</string>
        </property>
