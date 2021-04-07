@@ -30,7 +30,7 @@ void Stopwatch::on_start_clicked()
 
 void Stopwatch::on_stop_clicked()
 {
-    mThread->stopped=true;
+    mThread->restart=true;
     mThread->Stop = true;
 }
 

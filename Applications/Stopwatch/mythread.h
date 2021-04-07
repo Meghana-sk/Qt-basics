@@ -16,7 +16,7 @@ public:
     // if Stop = true, the thread will break
     // out of the loop, and will be disposed
     bool Stop;
-    bool stopped;
+    bool restart;
     // me added
     int i=0;
 
