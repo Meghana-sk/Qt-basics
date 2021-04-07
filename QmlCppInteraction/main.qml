@@ -13,22 +13,30 @@ Window {
         spacing: 20
         Button{
             id: btn1
-            text: "INVOKE"
+            text: "invoke"
             onClicked: {
-                Utitlity.print()
+                Utility.print()
             }
         }
         Button{
             id: btn2
-            text: Utitlity.m_author
+            text: "property"
             onClicked: {
-                Utitlity.m_author = "Meghana"
-                console.log("properties - ",Utitlity.m_author)
+                Utility.m_author = "Meghana"
+                console.log("properties - ",Utility.m_author)
             }
         }
         Button{
             id: btn3
             text: "SIGNAL-SLOTS"
+            MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        var result = Utility.postMessage("Hello from QML")
+                        console.log("Result of postMessage():", result)
+                        Utility.refresh();
+                    }
+                }
         }
     }
 

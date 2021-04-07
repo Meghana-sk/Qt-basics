@@ -8,7 +8,7 @@
 class Utitlities : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QString author READ author WRITE setAuthor NOTIFY authorChanged)
+    Q_PROPERTY(QString getAuthor READ getAuthor WRITE setAuthor NOTIFY authorChanged)
 public:
     explicit Utitlities(QObject *parent = nullptr);
     Q_INVOKABLE void print();
@@ -24,6 +24,19 @@ signals:
 private:
     QString m_author;
 
+public:
+    Q_INVOKABLE bool postMessage(const QString &msg) {
+        qDebug() << "Called the C++ method with" << msg;
+        return true;
+    }
+
+public slots:
+    void refresh() {
+        qDebug() << "Called the C++ slot";
+    }
+
 };
+
+
 
 #endif // UTITLITIES_H
