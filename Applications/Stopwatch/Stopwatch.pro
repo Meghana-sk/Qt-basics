@@ -10,9 +10,11 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    mythread.cpp \
     stopwatch.cpp
 
 HEADERS += \
+    mythread.h \
     stopwatch.h
 
 FORMS += \
