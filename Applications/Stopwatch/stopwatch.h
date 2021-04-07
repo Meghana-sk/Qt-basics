@@ -25,6 +25,8 @@ private slots:
 
     void on_reset_clicked();
 
+    void on_close_clicked();
+
 public slots:
     void onValueChanged(int);// response to signal
 

@@ -45,6 +45,13 @@ void Stopwatch::on_reset_clicked()
 
 void Stopwatch::onValueChanged(int count)
 {
+    ui->lineEdit->setPlaceholderText("0");
+    //ui->lineEdit->setFocus();
     ui->lineEdit->setText(QString::number(count));
 
+}
+
+void Stopwatch::on_close_clicked()
+{
+    QApplication::exit();
 }
