@@ -13,7 +13,7 @@ Window {
         id: rectId
         height: parent.height
         width: parent.width
-        color: "pink"
+        color: "beige"
     }
 
     RoundButton{
@@ -28,7 +28,7 @@ Window {
             if(count++%2 == 0)
                  rectId.color = "darkslategray"
              else
-                 rectId.color = "khaki"
+                 rectId.color = "beige"
 
 
 
