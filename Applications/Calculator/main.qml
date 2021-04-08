@@ -18,8 +18,8 @@ Window {
     }
     GridLayout{
 
-        width: parent.width
-        height: parent.height
+        width: parent.width/10
+        height: parent.height/10
         anchors.fill: parent
         columns: 4
         rows: 5
